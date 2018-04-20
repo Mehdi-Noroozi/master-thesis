@@ -1,6 +1,7 @@
 \documentclass[12pt]{ifi_thesis}
 \setcounter{secnumdepth}{3} % Number \subsubsection
 \setcounter{tocdepth}{3} % Include \subsubsection in ToC
+\usepackage{pdfpages}
 \usepackage[hyphens]{url}
 \usepackage{lipsum}
 \usepackage{graphicx}
@@ -9,15 +10,11 @@
 \usepackage{acro}
 \acsetup{first-style=short, hyperref = true } %REMOVE hyperref for print
 \usepackage{tabu}
-
-%abbreviations:
-\include{acronyms}
-
-%% Tentative: newtx for better-looking Times
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{newtxtext,newtxmath}
-
+\graphicspath{{Images/}}
+\renewcommand{\baselinestretch}{1.5}
 % Must use biblatex to produce the Published Contents and Contributions.
 \usepackage[
     backend=biber,natbib,
@@ -25,12 +22,29 @@
     style=authoryear
 ]{biblatex}
 
+\usepackage{filecontents}
+\usepackage{cleveref}
+\newcommand\myshade{85}
+\colorlet{mylinkcolor}{violet}
+\colorlet{mycitecolor}{blue}
+\colorlet{myurlcolor}{cyan}
+\hypersetup{
+  linkcolor  = mylinkcolor!\myshade!black,
+  citecolor  = mycitecolor!\myshade!black,
+  urlcolor   = myurlcolor!\myshade!black,
+  colorlinks = true,
+}
+
+%abbreviations:
+\include{acronyms}
+
 % Name of your .bib file(s)
 \addbibresource{references.bib}
 \addbibresource{references_Mendeley.bib}
 
 \begin{document}
-\title{Title of the thesis}
+
+\title{Communication and coordination in distributed software teams\\in large-scale distributed software development}
 \author{Mehdi Noroozi}
 \degreeaward{Master of Science in Informatics: Programming and Networks}
 \university{University of Oslo}    
@@ -39,16 +53,19 @@
 \copyyear{2018}  
 \defenddate{}          
 \orcid{}
+\pagenumbering{gobble}
 \rightsstatement{This work is licensed under a \href{https://creativecommons.org/licenses/by/4.0/}{Creative Commons Attribution 4.0 International License.}
 \begin{figure}[hbt!]
 \centering
 \includegraphics[width=.2\textwidth]{cc.png}
 \end{figure}}
 
+
 \maketitle[logo]
 
-\include{acknowledgements}
-\include{abstract}
+\frontmatter
+%\include{acknowledgements}
+%\include{abstract}
 \tableofcontents
 \listoffigures
 \listoftables
@@ -56,20 +73,29 @@
 \printacronyms
 
 \mainmatter
-
 \part{Introduction}
-\include{ch_intro}
+\include{chapters/intro}
 
-\part{Analysis}
-\include{ch_researchmethod}
+%\part{Background}
 
-\part{Summary}
+\part{Research Method}
+\include{chapters/researchmethod}
+
+%\part{Results and discussion}
+
+%\part{Summary}
+%\include{ch_x}
 %\include{discussion}
 %\include{conclusion}
 
-\printbibliography[heading=bibintoc]
-\appendix
-%\chapter{First appendix}
+
+%\printbibliography[heading=bibintoc]
+%\nocite{Nyrud2017a} %For referring to references not used in the article!!!
+
+%\appendix
+%\chapter{Survey Questions}
+%\includepdf[pages=-, scale=0.9, pagecommand={}]{survey.pdf} 
+
 
 %\printindex
 %\theendnotes

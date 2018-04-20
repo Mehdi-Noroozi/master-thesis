@@ -149,6 +149,7 @@
 % The copyright page is new, must conform to CIT requirements
 %
 \newcommand{\makecopyright}{%
+\pagenumbering{gobble} %removes page number
  {\parindent=0pt
  \null              % Forces rest to bottom of page
  \vfill
