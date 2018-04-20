@@ -27,7 +27,7 @@
 \usepackage{cleveref}
 \newcommand\myshade{85}
 \colorlet{mylinkcolor}{violet}
-\colorlet{mycitecolor}{blue}
+\colorlet{mycitecolor}{orange}
 \colorlet{myurlcolor}{cyan}
 \hypersetup{
   linkcolor  = mylinkcolor!\myshade!black,
@@ -35,6 +35,40 @@
   urlcolor   = myurlcolor!\myshade!black,
   colorlinks = true,
 }
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Code highlighting
+%New colors defined below
+\usepackage{listings} % for code display and highlighting
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+  backgroundcolor=\color{backcolour},   commentstyle=\color{codegreen},
+  keywordstyle=\color{magenta},
+  numberstyle=\tiny\color{codegray},
+  stringstyle=\color{codepurple},
+  basicstyle=\footnotesize,
+  breakatwhitespace=false,         
+  breaklines=true,                 
+  captionpos=b,                    
+  keepspaces=true,                 
+  numbers=left,                    
+  numbersep=5pt,                  
+  showspaces=false,                
+  showstringspaces=false,
+  showtabs=false,                  
+  tabsize=2
+}
+%"mystyle" code listing set
+\lstset{style=mystyle}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 
 %abbreviations:
 \include{acronyms}
@@ -54,7 +88,7 @@
 \copyyear{2018}  
 \defenddate{}          
 \orcid{}
-\pagenumbering{gobble}
+\pagenumbering{gobble} %removes page number from the first pages
 \rightsstatement{This work is licensed under a \href{https://creativecommons.org/licenses/by/4.0/}{Creative Commons Attribution 4.0 International License.}
 \begin{figure}[hbt!]
 \centering
@@ -74,15 +108,15 @@
 %\printacronyms
 
 \mainmatter
-\part{Introduction}
+%\part{Introduction}
 \include{chapters/1intro}
-
-\part{Background}
+%\include{sections/eks}
+%\part{Background}
 \include{chapters/2background}
-\part{Research Method}
+%\part{Research Method}
 \include{chapters/3method}
 
-\part{Results and discussion}
+%\part{Results and discussion}
 
 
 

@@ -1,6 +1,6 @@
 \chapter{Example}
 
-\ac{us}, \ac{ny}, \ac{la} and \ac{un} are abbreviations. You can define nomenclatures \index{nomenclature} as you talk about key terms in your thesis. So what's a galaxy? \nomenclature{Galaxy}{A system of stars independent from all other systems}
+%\ac{us}, \ac{ny}, \ac{la} and \ac{un} are abbreviations. You can define nomenclatures \index{nomenclature} as you talk about key terms %in your thesis. So what's a galaxy? \nomenclature{Galaxy}{A system of stars independent from all other systems}
 
 Start off all chapters with \verb|chapter|. \index{chapter!numbered} \verb|\extrachapter| will give you an unnumbered chapter that's added to the Table of Contents. \index{chapter!unnumbered}
 
@@ -44,5 +44,19 @@ West & 140\\
 
 Here's an endnote.\endnote{Endnotes are notes that you can use to explain text in a document.}
 
-\section{This is Another Section}
-\lipsum[6-7] 
+\section{This is code Section}
+
+\begin{lstlisting}[language=Python, caption=JSON example]
+ {
+     "type": "message",
+     "user": "U3MPT6W77",
+     "text": "I don't understand the question :slightly_smiling_face:",
+     "ts": "1495181765.592074"
+  },
+  {
+     "type": "message",
+     "user": "U0J0FB5RB",
+     "text": "How are you being directed to this login page",
+     "ts": "1495181783.595582"
+  },
+\end{lstlisting}
