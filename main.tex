@@ -13,6 +13,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{newtxtext,newtxmath}
+\usepackage{soul} %for highlighting text usage: hl{}
 \graphicspath{{Images/}}
 \renewcommand{\baselinestretch}{1.5}
 % Must use biblatex to produce the Published Contents and Contributions.
@@ -21,7 +22,7 @@
     % IMPORTANT: load a style suitable for your discipline
     style=authoryear
 ]{biblatex}
-
+\renewcommand{\chaptername}{} % removes "chapter" word from table of contents
 \usepackage{filecontents}
 \usepackage{cleveref}
 \newcommand\myshade{85}
@@ -61,32 +62,29 @@
 \end{figure}}
 
 
-\maketitle[logo]
+%\maketitle[logo]
 
 \frontmatter
 %\include{acknowledgements}
 %\include{abstract}
 \tableofcontents
-\listoffigures
-\listoftables
-\printnomenclature
-\printacronyms
+%\listoffigures
+%\listoftables
+%\printnomenclature
+%\printacronyms
 
 \mainmatter
 \part{Introduction}
-\include{chapters/intro}
+\include{chapters/1intro}
 
-%\part{Background}
-
+\part{Background}
+\include{chapters/2background}
 \part{Research Method}
-\include{chapters/researchmethod}
+\include{chapters/3method}
 
-%\part{Results and discussion}
+\part{Results and discussion}
 
-%\part{Summary}
-%\include{ch_x}
-%\include{discussion}
-%\include{conclusion}
+
 
 
 %\printbibliography[heading=bibintoc]
