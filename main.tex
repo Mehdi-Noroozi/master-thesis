@@ -1,6 +1,8 @@
 \documentclass[12pt]{ifi_thesis}
 \setcounter{secnumdepth}{3} % Number \subsubsection
 \setcounter{tocdepth}{3} % Include \subsubsection in ToC
+
+\usepackage{booktabs}
 \usepackage{pdfpages}
 \usepackage[hyphens]{url}
 \usepackage{lipsum}
@@ -15,7 +17,9 @@
 \usepackage{newtxtext,newtxmath}
 \usepackage{soul} %for highlighting text usage: hl{}
 \graphicspath{{Images/}}
-\renewcommand{\baselinestretch}{1.5}
+%\renewcommand{\sfdefault}{phv}
+%\renewcommand{\familydefault}{\sfdefault}
+\renewcommand{\baselinestretch}{2}
 % Must use biblatex to produce the Published Contents and Contributions.
 \usepackage[
     backend=biber,natbib,
@@ -115,10 +119,10 @@
 \include{chapters/2background}
 
 %\part{Research Method}
-%\include{chapters/3method}
+\include{chapters/3method}
 
-%\part{Results and discussion}
-
+\part{Results and discussion}
+\include{chapters/4results}
 
 
 
