@@ -1,5 +1,6 @@
-\chapter{Communication}
+\chapter{Background}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%###################################################################################
 Distributed software development (\ac{dsd}) is today practiced commonly in the software industry in both large and small companies and organizations \citep{shrivastava2010distributed}. This means that software development teams are not physically sitting in the same place and hence don’t have the opportunity to meet or speak to other team members in person regularly \citep{layman2006essential}. This distribution might mean sitting in two different buildings or sitting on two different continents. \ac{gsd} is a particular form of \ac{dsd} in which the distribution of teams are across national borderlines \citep{sahay2003global}. 
 
 Communication has an important role in the success of \ac{gsd} \citep{carmel2001tactical,french1998study}, especially informal communication \citep{herbsleb2003empirical}. The processes of communication, coordination, and collaboration are of the utmost importance and key aspects of the software development process \citep{colomo2014agile}. 
@@ -14,7 +15,93 @@ Receiving delayed feedback is also another challenge faced by remotely located t
 
 It is also true that a software engineer usually spends most of her time in searching and exchanging information, rather than doing anything else, and as a result, this can lead to delays in completing the project and increases the cost of the project. One of the ways to mitigate this problem is through proper project coordination \citep{dumitriu2006issues}. \hl{why synchronous is essential (last 2 paragraphs are about it)}
 
-\section{Slack}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Coordination} \label{coord}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Scholars have defined coordination in different ways. (Malone 1988) defines coordination as for when several actors seek goals together and must do things to organize themselves in order to reach that goal while a single actor seeking the same goals does not have to do the same things. He calls these extra activities needed for organizing, coordination. Later, Malone and Crowston (1994) adjusted the definition of coordination to managing of dependencies. The definition is justified in that there are interdependent associations between activities, and contrive with these relations effectively, coordination mechanisms are needed (Deng et al., 2007).
+
+Coordination from Osifo's (2012) point of view can be classified as part of an organization. At the same time, Bouckaert (2006) and Osifo (2012) confirm Malone and Crowston’s (1988) definition which states that there would be no need for coordination if there is no dependency and relation.
+
+There are two aspects of the coordination which are important for organizations, internal and external coordination. Internal coordination is important to achieve cooperation by having support and clarity. Without internal coordination, it would be difficult to achieve satisfactory progress in the projects. It also provides help in setting rules and criteria. External coordination also plays an important role in setting limits so that the project always stays in focus and continues on the right path (Osifo, 2012).
+
+Coordination is part of nearly every single part of a project and is rarely employed alone by only one coordination mechanism (Osifo 2012). Almost always coordination of a particular project or organization is accomplished by using several coordination mechanisms (Dietrich et al., 2013).
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Van de Ven model of coordination}
+Researchers have suggested several coordination mechanisms. Strode et al. (2012) states that synchronization, structure, and boundary spanning are mechanisms which are worthy for efficient coordination. Mintzberg (1980) believes that mechanisms such as mutual adjustment, direct supervision, and standardization are of importance in coordination.
+
+Van de Ven et al. (1976) suggest another coordination model which is somehow similar to other scholars but adds the notion of team to the coordination strategy. For example, they believe that mutual adjustment in co-located teams is reached by mutual interactions.
+
+Van de Ven et al. (1976) suggest another coordination model which is somehow similar to the models suggested by other scholars but adds the notion of team to the coordination strategy. For example, they believe that mutual adjustment in co-located teams is reached by mutual interactions.
+Still, in the case of the ways in which coordination can be achieved it is somewhat similar to the theory suggested by  Thompson (1967). According to Van de Ven et al. (1976), there are three modes for coordination of work activities; impersonal, personal, and group mode of coordination.
+
+In Van de Van's model, the focus is on the team and how based on the change of some factors the coordination modes changes. Van de Ven et al. (1976) suggest that coordination mechanisms in every one of those three modes are utilized in different combinations to reach a certain collective goal.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Impersonal mode of coordination}
+Anything that needs the minimum amount of verbal communication between actors once implemented and in nature is relevant to programming, technical means, and administrative coordination can be correlated with impersonal mode of coordination (Boos et al., 2011, Van de Ven et al., 1976). 
+
+Kraut et al. (1995) suggest some coordination techniques that can reduce some of the coordination challenges when a mixture of large size, intricacy, and interdependence occurs simultaneously;  using technical tools, modularization, and formal procedures are some of the suggested techniques.
+
+Keeping large-scale projects coordinated by using tools and having a shared system to keep the record of documents is of utmost importance. Some of the examples of impersonal coordination mechanisms found in large-scale agile are standardization of work process (such as following the scrum methodology), having rules for QA, and use of tools such as Jira (Nyrud, Stray 2017).
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Personal mode of coordination}
+In the personal mode, according to Van de van 1970, coordination happens through feedback or mutual adjustments on the input information that an actor receives from the other actors. Mutual task adjustments happen either through vertical or horizontal communication channels.
+Line managers and unit supervisors are often the mechanisms of vertical communication which is hierarchical in nature (Thompson, 1967). But horizontal communication is more about individual people in teams that communicate on a one-to-one basis with other team members, and it is usually non-hierarchical (van de van 1979).
+
+Mintzberg (1980) divides coordination mechanisms to mutual adjustment and direct supervision. These two mechanisms are similar to vertical and horizontal channels of communication in the personal mode of coordination. Mutual adjustment happens when people in the team informally communicate with other teammates to coordinate their tasks. In the direct supervision, a person from a higher level than the others, like the head of a team, gives some instructions that must be followed by other team members who work under her supervision.
+\hl{Hva er egentlig IM? A tool? Impersonal. Mutual adjustment -> vertical/horizontal personal mode? 1to1 group mode unscheduled? channels.}
+
+Personal mode of coordination consists of both informal and formal communication (Kraut and Streeter, 1995). Also, it is more valuable in unscheduled and unexpected encounters (Boos et al. (2011) Dickinson and McIntyre (1997). Kraut et al. (1995) suggest that informal communication between team members while discussing work-related matters in front of water or coffee machine forms a large amount of coordination and that coordination does not only happen in formal meetings.
+
+The success of coordination is dependent on some factors. Trust is one of those factors because organizational performance is realized by the network created by coordination (Lehtimäki (1996). Reduced coordination is in direct association with trust (Smith and Schwegler). And its importance is because it is the central part of decent coordination (Osifo, 2012). 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Group mode of coordination}
+Group mode of coordination, like the personal mode, happens by feedback and mutual adjustments but with the difference that all these happen in the group in unscheduled or scheduled meetings and consists of more planned communication  (Van de Ven et al. 1976).
+
+Dietrich et al. (2013) suggest three other coordination mechanisms that are important in large-scale projects. Those three mechanisms are called centralized, decentralized, and balanced patterns, which respectively are about coordination at the group level that is either scheduled or unscheduled, coordination between teammates which are not scheduled, and at last the combination of the first two ones.
+
+The coordination strategy that Strode et al. (2012) have suggested involves three principal concepts of synchronization, structure, and boundary spanning that assist in managing dependencies. Regarding the group mode of coordination, synchronization has more relevance and importance and is gained within synchronization activities. These activities are done usually once at the beginning of the project, but also can happen several times during the project so that the team members are aware of the project requirements and maintain this understanding during the whole project (Strode et al. (2012). 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Communication} \label{communication}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+All team members in both collocated and distributed software teams communicate with each other using some form of Internet-based communication tool (Kirkman  Mathieu, 2005). Using internet-based communication in teams have several benefits for companies, such as easier access to the global market, preserving the environment, and having team members in different locations around the globe that will enable the companies to work non-stop (Cascio, 2000). Research also shows that distributed teams, that are inevitably using internet-based communication, performing better than traditional teams in tasks like brainstorming because of the elimination of production blocking effects (Dennis  Valacich, 1993; Gallupe, Bastianutti,  Cooper, 1991).
+
+However, there are some challenges that threats distributed teams. High pressure in mastering advanced communication technology and lack of nonverbal communication, as well as problems in forming trust are some of them (Jarvenpaa  Leidner, 1999; Kayworth  Leidner, 2001). Misunderstanding might also happen easily in the absence of sentiment and meta-level information, such as body language (Cramton, 2001). Although the type of communication technology and tools will affect the communication in teams and might lead to limited information sharing between distributed team members (Cramton  Orvis, 2003).
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Media Richness and Media Synchronicity Theories}
+Seminal media theory tries to categorize the communication media based on their effectiveness and "richness" to express the link between communication and technology, and in this regard sees the richest medium in face-to-face encounters that is able of carrying all the verbal and non-verbal messages and minimizes the ambiguity while sees the written mediums, such as email, as the least rich medium of communication (Daft and Lengel, 1986) \citep{Hassell2016}.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Distributed teams} \label{dt}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Distributed teams are called by several names, but it is generally agreed that a team is considered as distributed when its members are spread at least in two locations \citep{Hinds2005}. This physical separation can range between two different offices in the same city or country or people sitting in different countries and continents \citep{Mortensen2001}. Here I will now discuss some of the advantages and disadvantages of using distributed software teams.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Advantages of using distributed teams}
+When evaluating distributed teams and discussing the dynamic situation of global business it is essential to know the advantages that this type of team structure offers a company that uses it. 
+
+1- Companies can benefit from a much more bigger pool of global experts in different subjects and recruit some of the best talents that might not be available locally or might be expensive to recruit \citep{Snyder2003}. Relocation is costly and stressful and today most of the workers try to avoid it \citep{Lipnack1997,Joinson2002}. Human resources of companies can be increased in this case, because especially skilled members of the company can serve on several teams simultaneously \citep{Hertel2004}. 
+
+2- Costs associated with traveling and accommodation will be reduced drastically or completely eliminated. \citet{Baskerville2007} report that IBM by using distributed teams saved \$50 million in travel and downtime costs.
+
+3- Distributed teams encourages multiculturalism and discourages discrimination by age and race because the members are evaluated by the performance and productivity. This type of team fosters equality and fairness among the employees \citep{Bergiel2007}.
+
+4- Because of the diversity and heterogeneity of distributed teams, these teams are more effective and promote creativity among its members compared to more rigid structure of traditional teams which are limited by time and space \citep{Bergiel2008}.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Disadvantages of using distributed teams}
+1- Managing conflicts between team members in distributed teams is a big challenge \citep{Hinds2003}. Lack of good communication tools and a shared identity in distributed teams lead to conflict \citep{Hinds2005a}. 
+
+2- Coordination and cohesion may be reduced in distributed teams which in turn affects work performance \citep{DeRosa2004}.
+
+3- Feeling isolated and lack of face-to-face social interaction is also common in distributed teams that don't have the opportunity of meeting their colleagues as often as traditional teams \citep{Kiesler2002}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Slack} \label{slack}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Since analyzing Slack constitutes an important part of this thesis and Slack is more than yet another chat application I decided to give a description of this platform and some of its most important functions that makes Slack one of the most popular communication and collaboration systems used in software teams.
 
@@ -24,3 +111,28 @@ Slack was started in 2013 and has more than four million active users every day 
 
 Williams (2015) who has created a document on how to use the Slack, says that Slack can be seen as a chat room where the whole company and its different teams can be broken into smaller channels for group discussion. Channels are often created to discuss a certain topic and are like the old chat rooms. Like any other communication platform, sending direct messages to individuals is also possible in Slack.
 
+Slack is a multi-platform software, meaning that it can be used on all kinds of operating systems on all mobile phones, as well as desktops and laptops. The user can be notified of several things by several ways. Direct messages and mentions usually generate notifications that can both received by email, if the user is not online, or will be shown on the Slack app. These notifications are highly customizable and can be suppressed to avoid being overwhelmed by the number of notifications. 
+
+Teams are another feature of Slack. Groups of people who are working together can use it to communicate with each other. It can be created simply by visiting Slack's website. A team must have an owner and can have several admins who will enforce the team rules. Often working in large organizations means being part of several Slack teams. There is also possible to work in several workspaces, as each one works as a separate team that is connected to the Slack's enterprise network.  All the teams and works places are available on the web, desktop, and mobile version of Slack.
+
+Figure \ref{fig:slack} shows an screen shot of a Slack channel.
+\begin{figure}[hbt!]
+\centering
+\includegraphics[width=\linewidth, frame]{slack.JPG}
+\caption{A screenshot from Slack}\label{fig:slack}
+\index{figures}
+\end{figure}
+
+
+Channels in Slack are used as chat rooms for group conversation. Different channels are usually created to discuss certain topics. These channels can either be public or private. Public channels are visible to the entire team and all the team members can join them. But private channels need an invitation to join and usually, admin of the channels adds the other users to the channel.
+ 
+Everything shared on Slack, including text, image, file, and other types of posts can be searched by users. The information shared in private channels can just be searched and found by the members of the channel. Also paid customers of Slack have the ability to invite external users. In that case, only the information shared in the respective channels can be searched and found by the external member.
+
+The other way that users can communicate in Slack is by direct messages (DM). It is possible to send a DM to up to eight other users simultaneously. Obviously, these messages can be just seen and searched by those who are involved in the messages. It is also possible to call up to fifteen users at the same time if the team is a using the paid service, but in the free version, just one-on-one calls are supported. 
+
+Using emoji is another way of communicating in Slack, it can be both used by the user who is writing the message to communicate her emotions (Figure \ref{fig:slack}), as well as by the readers of the message who can "react" to the message and communicate their emotion with the sender of the message. it is also common to get the attention of someone or the whole members of a channel by putting @ before the username of the users. In this case, users will immediately get a notification if they are online, or will get an email in case they are offline.
+
+Moreover, the notifications that the user receives can be heavily customized to meet the needs of the user. Users, for example, may define certain words and phrases that when appeared in chat messages visible by the user the system will generate a notification. Notification can be manipulated based on several properties, like time, date and location. For example, one can decide not to receive any notification during weekends. Another capability that Slack users have is the ability to organize messages by pinning them or starring them, in order to get access to important messages more easily late on. All the sent messages can also be edited after being sent. And the appearance of the Slack can be customized by changing themes and colors to match the taste of every individual user. 
+
+One of the reasons that Slack is so popular in teams is because of its ability to integrate with lots of external services, like Google Calendar, GitHub, IFTTT, and many more \citep{Williams2015}. Users also have the possibility of sending and sharing files and folders. It is also possible for users to make voice and video calls. All the function mentioned in this section are provided free of charge but enterprise users can pay to enjoy some extra features like group video chats, more storage, and unlimited availability of past conversations.
+\hl{Good, but can it be related to theory in the pic1(maruping 2004)? Slack also has editability that can be added to the theory. Slack also has rehearsability. }

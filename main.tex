@@ -7,7 +7,8 @@
 \usepackage{rotating}
 \usepackage[verbose]{placeins}
 \usepackage{blindtext}
-
+\usepackage{siunitx}
+\usepackage[export]{adjustbox}
 \usepackage{pdfpages}
 \usepackage[hyphens]{url}
 \usepackage{lipsum}
@@ -110,13 +111,14 @@
 \frontmatter
 %\include{acknowledgements}
 %\include{abstract}
-\tableofcontents
+%\tableofcontents
 %\listoffigures
 %\listoftables
 \printnomenclature
 \printacronyms
 
 \mainmatter
+%\include{sections/eks}
 %\part{Introduction}
 %\include{chapters/1intro}
 
@@ -124,11 +126,11 @@
 \include{chapters/2background}
 
 %\part{Research Method}
-\include{chapters/3method}
+%\include{chapters/3method}
 
-\part{Results and discussion}
-\include{chapters/4results}
-
+%\part{Results and discussion}
+%\include{chapters/4results}
+%\include{chapters/5discussion}
 
 
 %\printbibliography[heading=bibintoc]
