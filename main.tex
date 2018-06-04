@@ -1,7 +1,6 @@
-\documentclass[12pt]{ifi_thesis}
+\documentclass[12pt,twoside]{ifi_thesis}
 \setcounter{secnumdepth}{3} % Number \subsubsection
 \setcounter{tocdepth}{3} % Include \subsubsection in ToC
-
 \usepackage{tabularx} %tables
 \usepackage{booktabs} %tables
 \usepackage{rotating}
@@ -107,7 +106,7 @@
 \end{figure}}
 
 
-\maketitle[logo]
+%\maketitle[logo]  %%%Generates the title
 
 \frontmatter
 \include{acknowledgements}
@@ -120,21 +119,21 @@
 
 \mainmatter
 %\include{sections/eks}
-\part{Introduction}
-\include{chapters/1intro}
+%\part{Introduction}
+%\include{chapters/1intro}
 
 \part{Background}
-\include{chapters/2background}
+%\include{chapters/2background}
 
 \part{Research Method}
 \include{chapters/3method}
 
-%\part{Results and discussion}
-%\include{chapters/4results}
-%\include{chapters/5discussion}
+\part{Results and discussion}
+\include{chapters/4results}
+\include{chapters/5discussion}
 
 
-\printbibliography[heading=bibintoc]
+%\printbibliography[heading=bibintoc]
 %\nocite{Nyrud2017a} %For referring to references not used in the article!!!
 
 %\appendix
