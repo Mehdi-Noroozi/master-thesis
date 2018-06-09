@@ -1,32 +1,47 @@
 \chapter{Research Methods}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 This chapter describes the methodology of the research and the reasons behind choosing it for the data analysis used in this thesis. It will provide detailed information about the data, the research design, and how the analysis was conducted.
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Research approach}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 For finding the answer for the research questions, I decided to use a hybrid approach, i.e. using both a qualitative and a quantitative approach. According to \citet{Ghauri2010} qualitative research is more suitable when the research is more investigative and not many insights is available from past researches. 
 \citet{ Stray2012a} state that in case studies a mixture of qualitative and quantitative approaches can be used in order to ensure the validity of the results.  
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Primary data}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 The primary data was collected through running a survey among active professional software developers who were working in teams in order to gain more insight about coordination and communication tools, methods, and challenges in software teams, as well as finding an answer for Research Question 2.
 
 The survey targeted professional software developers, so I decided at first to post it on Reddit in order to recruit active software developers. Reddit is a social media where everyone, including developers, shares their ideas and interesting links in special groups, which are specified around certain topics, called subreddits. I chose two subreddits that were relevant to programming; r/programming with 1 million subscribers, and r/gamedev with 254000 subscribers.
 
-The other method that I used was snowball sampling. Snowball sampling is a non-probability sampling technique where current study subjects recruit future respondents from the people they already know. Thus the sample group of subjects will grow like a rolling snowball from top of a mountain. \citet{Baltar2012} calls the method virtual snowball sampling when the subjects are recruited through social media. It is used when an eligible respondent shares the survey with other subjects who satisfy the criteria defined for the targeted population (Berg, 2006). 
+The other method that I used was snowball sampling. Snowball sampling is a non-probability sampling technique where current study subjects recruit future respondents from the people they already know. Thus the sample group of subjects will grow like a rolling snowball from top of a mountain. \citet{Baltar2012} calls the method virtual snowball sampling when the subjects are recruited through social media. It is used when an eligible respondent shares the survey with other subjects who satisfy the criteria defined for the targeted population (Berg, 2006).
+
 In order to recruit respondents with this method, I used a combination of asking people in Facebook groups devoted to programming and software engineering, as well as emailing a group of friends and contact persons who I have in some of the Norwegian IT companies.
 
 Qualtrics survey cloud platform was used to format the survey (see appendix 1) and collect the data, and it was designed to be filled just once by every respondent. In order to increase the quality of the data, no incentives or compensation were offered to respondents.  The survey took between three to five minutes to complete and was open for five days, from March 11, 2018, to March 15, 2018.
 
 The survey flow was dynamic, meaning that not all questions were shown to all the respondents and some questions were skipped automatically based on the previous answers. In addition, some of the questions were voluntary to answer which led to lack of response and missing data.
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Secondary data}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 Secondary data was collected from Slack chat logs of public and private channels of several software development teams of a major Norwegian company in Norway and Poland, we are going to call the company Datasoft.
-Datasoft is an international company headquartered near Oslo, Norway that currently has more than 15,000 employees and 350 offices operating in more than 100 countries having more than 100,000 customers, and provides services for several industries. Its software branch has more than 500 employees that are located in several countries, including Norway, Poland, China, and Germany. 
+Datasoft is an international company headquartered near Oslo, Norway that currently has more than 15,000 employees and 350 offices operating in more than 100 countries having more than 100,000 customers, and provides services for several industries. Its software branch has more than 500 employees that are located in several countries, including Norway, Poland, China, and Germany.
 
 In this thesis, we will analyze conversation between a couple of software development teams of the company. These teams are located in two development centers located in Norway and Poland. Conversations are in form of instant messages sent through Slack. Slack is an acronym for "Searchable Log of All Conversation and Knowledge". Slack does not use an IRC backend but offers a lot of IRC-like features, such as public and private channels (IRC chat rooms) organized by topic, as well as private messages. A detailed description of Slack is presented at section \ref{slack}.
-Chat logs, consisting of around 30,000 messages were gathered from Oct. 20, 2014 to Aug. 25, 2017.
+
+Chat logs, consisting of around 30,000 messages were gathered from Oct. 20, 2014, to Aug. 25, 2017. The exported logs were in JSON format (See a sample in Listing \ref{lst:json}) which was later transformed to excel file in order to get a human-readable date format as well as making it possible to import it to NVivo.
 
 
 
@@ -55,9 +70,6 @@ Emoji & Emojis used by users & :slightly\_smiling\_face: \\
 \end{table}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% end
-
-
-
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% start
